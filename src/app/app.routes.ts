@@ -19,5 +19,23 @@ export const routes: Routes = [
                 m => m.TodosComponent
             );
         },
-    }
+    },
+
+    {
+        path: 'login', 
+        loadComponent: () => {
+            return import("./auth/login/login.component").then(
+                m => m.LoginComponent
+            );
+        },
+    },
+
+    {
+        path: 'register', 
+        loadComponent: () => {
+            return import("./auth/register/register.component").then(
+                m => m.RegisterComponent
+            );
+        },
+    },
 ];

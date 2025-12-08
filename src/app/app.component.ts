@@ -12,7 +12,7 @@ import { HeaderComponent } from './component/header/header.component';
   
   <app-header></app-header>
 
-  <main>
+  <main class="min-h-screen bg-red-50 p-4 flex justify-center">
      <router-outlet></router-outlet>
       <!--<app-home></app-home>-->
   </main>
