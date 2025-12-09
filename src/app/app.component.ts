@@ -13,10 +13,11 @@ import { TodosService } from './services/todos.service';
   
   <app-header></app-header>
 
-  <main class="min-h-screen bg-blue-50 p-4 flex justify-center">
-     <router-outlet class=""></router-outlet>
-      <!--<app-home></app-home>-->
-  </main>
+
+    <router-outlet></router-outlet>
+    <!--<app-home></app-home>-->
+
+
  
   `,
   styleUrl: './app.component.css'

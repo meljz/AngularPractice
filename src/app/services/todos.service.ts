@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 export class TodosService {
 
   http = inject(HttpClient);
-/*
+
   todoItems: Array<Todo> = [{
     userId: 1,
     completed: false,
@@ -28,10 +28,9 @@ export class TodosService {
     id: 2,
   },
 ];
-  constructor() { }*/
+  constructor() { }
   getTodosFromAPI(){
     const url = 'https://jsonplaceholder.typicode.com/todos/';
     return this.http.get<Array<Todo>>(url);
   }
-
 }
