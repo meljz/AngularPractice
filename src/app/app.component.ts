@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './component/header/header.component';
+import { TodosService } from './services/todos.service';
 
 
 @Component({
@@ -12,8 +13,8 @@ import { HeaderComponent } from './component/header/header.component';
   
   <app-header></app-header>
 
-  <main class="min-h-screen bg-red-50 p-4 flex justify-center">
-     <router-outlet></router-outlet>
+  <main class="min-h-screen bg-blue-50 p-4 flex justify-center">
+     <router-outlet class=""></router-outlet>
       <!--<app-home></app-home>-->
   </main>
  
@@ -23,4 +24,8 @@ import { HeaderComponent } from './component/header/header.component';
 export class AppComponent {
   //title = 'practiceAngular';
   //content = 'Welcome to Angular with TypeScript!';
+
+  greet(){
+    console.log ('Hello there👋!');
+  }
 }

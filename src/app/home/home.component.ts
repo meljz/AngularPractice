@@ -13,4 +13,8 @@ export class HomeComponent {
   keyupHandler(){
     console.log('hello this is key keyuphandler function ');
   }
+
+  greet(){
+    alert('AKO TO');
+  }
 }
